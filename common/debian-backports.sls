@@ -4,6 +4,6 @@ python3-apt:
 
 backports-repo:
   pkgrepo.managed:
-    - humanname: Debian Bullseye Backports
-    - name: deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+    - humanname: Debian Bookworm Backports
+    - name: deb http://deb.debian.org/debian bookworm-backports main contrib non-free
 

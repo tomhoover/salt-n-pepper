@@ -11,6 +11,7 @@ template-vault_install:
       - qubes-core-agent-networking
       - qubes-app-shutdown-idle
       - nitrokey-app
+      - nitrokey-authenticator
       - yubioath-desktop
       - yubikey-manager
       - yubikey-personalization-gui
@@ -32,13 +33,13 @@ template-vault_install:
     - skip_suggestions: True
     - install_recommends: False
 
-template-vault_install-backports:
-  pkg.installed:
-    - fromrepo: bullseye-backports
-    - pkgs:
-      - nitrokey-authenticator
-    - skip_suggestions: True
-    - install_recommends: False
+# template-vault_install-backports:
+#   pkg.installed:
+#     - fromrepo: bullseye-backports
+#     - pkgs:
+#       - nitrokey-authenticator
+#     - skip_suggestions: True
+#     - install_recommends: False
 
 template-vault_ssh-split:
   file.managed:

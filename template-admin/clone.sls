@@ -1,8 +1,8 @@
 template-admin_precursor:
   qvm.template_installed:
-    - name: debian-11-minimal
+    - name: debian-12-minimal
 
 template-admin_qvm-clone:
   qvm.clone:
     - name: template-admin
-    - source: debian-11-minimal
+    - source: debian-12-minimal

@@ -1,8 +1,8 @@
 template-mail_precursor:
   qvm.template_installed:
-    - name: debian-11-minimal
+    - name: debian-12-minimal
 
 template-mail_qvm-clone:
   qvm.clone:
     - name: template-mail
-    - source: debian-11-minimal
+    - source: debian-12-minimal
